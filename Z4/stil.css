@@ -1,0 +1,121 @@
+html {
+font-size : 16px;
+background-image : url("pozadina2.jpg");
+}
+@media screen and (min-width:320px) {
+html {
+font-size : calc(16px + 6 * ((100vw - 320px) / 680));
+text-align : center;
+width : 100%;
+}
+}
+@media screen and (min-width:1000px) {
+html {
+font-size : 22px;
+text-align : center;
+}
+}
+body {
+font-family : 'Biryani', sans-serif;
+font-weight : 400;
+line-height : 1.35;
+text-align : center;
+float : inherit;
+color : black;
+}
+p {
+margin-bottom : 1.3em;
+margin-left : 15vw;
+margin-right : 15vw;
+background : rgba(255, 255, 255, 0.7);
+text-indent : 1.5em;
+}
+h1, h2, h3, h4 {
+
+line-height : 1.45em;
+text-shadow: 2px 2px 4px white;
+}
+h1 {
+margin-top : 0;
+font-size : 3.157em;
+}
+h2 {
+font-size : 2.369em;
+}
+h3 {
+font-size : 1.777em;
+}
+h4 {
+font-size : 1.333em;
+}
+.pocetak {
+color : white;
+background-image : url("header.jpg");
+padding-bottom : 40vh;
+padding-top : 40vh;
+background-attachment : fixed;
+background-size : contain;
+background-repeat : repeat;
+background-position : center;
+}
+.tranzicija {
+cursor : pointer;
+transition-property : letter-spacing;
+transition-duration : 2s;
+transition-delay : 0s;
+transition-timing-function: ease-in-out;
+}
+.tranzicija:hover {
+letter-spacing : 5px;
+}
+.pozadina {
+background-image : url("pozadina3.JPG");
+background-attachment : fixed;
+background-size : contain;
+background-repeat : repeat;
+background-position : center;
+}
+object{
+	width: 30vw;
+}
+
+i {
+font-size : 2em;
+cursor: progress;
+outline: 2px solid;      
+outline-color: white;
+outline-offset: 0.2em;
+outline-style: double;
+outline-width: medium;
+text-overflow: clip;
+}
+main {
+background-color : rgba(255, 255, 255, 0.5);
+}
+footer {
+visibility : hidden;
+box-sizing: content-box;
+width: 100%;
+padding: 0;
+border-width: 0;
+}
+.table {
+margin-left : auto;
+margin-right : auto;
+background : #CFC9C0;
+color : #fff;
+border-radius : 0.4em;
+overflow : hidden;
+column-count: initial;
+column-gap: normal; 
+column-fill: balance;
+column-rule: unset;
+column-rule-style: unset;
+column-span: none;
+widows: unset;
+column-width: unset;
+}
+th, td {
+margin : 5em 1em;
+border : white solid 1px;
+}

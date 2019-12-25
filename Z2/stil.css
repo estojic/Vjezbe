@@ -1,0 +1,84 @@
+body{
+	text-decoration: none;
+	text-decoration-color: #262320;
+	color: #262320;
+	font-family: Arial,Sans-serif;
+	background-color: #FCEAD1;
+	margin-left: 15px;
+}
+
+header
+
+p {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+
+.naslov{
+	font-size: 150%;
+	color: black;
+	text-align: center;
+	position: relative;
+	background-color: #E8D7C0;
+	padding-top: 15px;
+	margin-top: 10px;
+}
+
+.podnaslov{
+	color: black;
+	text-align: left;
+	background-color: #E8D2B1;
+
+}
+
+figure{
+	display: flex;
+	float: right;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+	opacity: 0.8;
+}
+
+img{
+	width: 400px;
+	height: 135px;
+	
+}
+
+dt{
+	text-decoration: underline;
+	text-decoration-color: #BCAA90;
+	text-shadow: 1px 0.5px grey;
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+dl {
+	border: 4px;
+	border-left-color: grey;
+	border-top-color: grey;
+	border-bottom-color: grey;
+	border-right-color: grey;
+	border-style: dashed;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 30px;
+}
+
+.linkovi{
+	margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+	
+}
