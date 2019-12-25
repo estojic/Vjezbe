@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Vježba 5.</title>
+
+	</head>
+
+	<body>
+	
+	<h1>DRUŠTVENA RAZMJENA NA STUDIJU</h1>
+	<form action="serverStrana.php">
+		<fieldset>              	
+                <label for="page01godine">Koliko imate godina? </label>
+                <input type="number" min="0" name="page01godine" id="page01godine" value="" />
+               
+               <hr />
+               
+               	<label id="page01spol">Kojeg ste spola? </label>
+            	<input type="radio" id="page01spolMusko" name="page01spol" value="M" />
+            	<label for="page01spolMusko">Muško</label>
+                <input type="radio" id="page01spolZensko" name="page01spol" value="F" />
+                <label for="page01spolZensko">Žensko</label>
+                
+                <hr />
+                
+                
+                <label for="page01mjesto">Molimo, navedite naziv Sveučilišta na kojemu studirate: </label>
+                <input type="text" name="page01mjesto" id="page01mjesto" value="" />
+                
+                <hr />
+                
+                <label for="page01smjer">Molimo unesite naziv Vašeg studijskog programa: </label>
+                <input type="text" name="page01smjer" id="page01smjer" value="" />
+                
+                <hr />
+                
+                <label id="page01program">Na kojoj ste trenutno razini studija? </label>
+            	<input type="radio" id="page01programBachelor" name="page01program" value="page01programBachelor" />
+            	<label for="page01programBachelor">Preddiplomski studij</label>
+            	<input type="radio" id="page01programMaster" name="page01program" value="page01programMaster" />
+            	<label for="page01programMaster">Diplomski studij</label>
+                <input type="radio" id="page01programMagister" name="page01program" value="page01programMagister" />
+            	<label for="page01programMagister">Poslijediplomski stručni studij</label>
+            	<input type="radio" id="page01programDoctoral" name="page01program" value="page01programDoctoral" />
+            	<label for="page01programDoctoral">Poslijediplomski doktorski studij</label>
+            	<input type="radio" id="page01programOther" name="page01program" value="page01programOther" />
+            	<label for="page01programOther">Drugo (molimo, precizirajte)</label>
+                <div id="page01programOtherDiv">
+                	<input type="text" name="page01programOtherText" id="page01programOtherText" value="" />
+                </div>
+                
+	</fieldset>
+	</form>
+
+	</body>
+
+</html>
