@@ -1,0 +1,114 @@
+html{
+font-family: Arial, sans-serif;
+background-color: #E0E0E0;
+font-size : 16px;
+}
+
+
+main{
+	align-content: center;
+	text-align: center;
+}
+
+div{
+	text-align: center;
+	align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #BEB5FC;
+}
+
+ul li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+	color: white;
+    background-color: #111;
+}
+
+img{
+	margin: auto;
+}
+
+button {
+	display: inline-block;
+  	padding: 25px 55px;
+  	font-size: 3em;
+  	cursor: pointer;
+  	text-align: center;
+  	text-decoration: none;
+  	outline: none;
+  	color: black;
+  	background-color: #FCE9C5;
+  	border: none;
+  	border-radius: 10px;
+  	box-shadow: 10px 10px 5px #888888;
+    transition-duration: 0.5s;
+}
+
+button:hover {background-color: #CFC0A2}
+
+button:active {
+  background-color: #CFC0A2;
+  box-shadow: 10px 10px 5px #888888;
+  transform: translateY(4px);
+}
+
+
+.jandranko img {
+	width: 450px;
+  backface-visibility: visible;
+  animation-name: flip;
+  animation-duration: 1s; 
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-delay: 0.5s;
+  }
+
+@keyframes flip {
+  0% {
+  transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+  animation-timing-function: ease-out;
+  }
+  40% {
+  transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+  animation-timing-function: ease-out;
+  }
+  50% {
+  transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+  animation-timing-function: ease-in;
+  }
+  80% {
+  transform: perspective(400px) scale3d(.95, .95, .95);
+  animation-timing-function: ease-in;
+  }
+  100% {
+  transform: perspective(400px);
+  animation-timing-function: ease-in;
+  }
+} 
+
+.tekst{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 2em;
+}
+
+img{
+	width: 800px;
+	margin:30px;
+}

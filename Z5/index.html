@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+	<head>
+		<!-- COMMON TAGS -->
+		<meta charset="utf-8">
+		<title>Prijava ispita</title>
+		<link rel="stylesheet" href="stil.css" />
+		<!-- Search Engine -->
+		<meta name="description" content="Prijava ispita iz kolegija na fakultetu">
+		<meta name="image" content="koala.jpg">
+		<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta name="image" content="bitmap.png" />
+		<meta name="og:title" content="Prijava ispita" />
+		<meta name="og:description" content="Prijava ispita iz kolegija na fakultetu" />
+		<meta name="og:image" content="slika.jpg" />
+		<meta name="og:url" content="http://it.ffos.hr/nastava20172018/estojic/Z5" />
+		<meta name="og:site_name" content="Prijava ispita" />
+		<meta name="og:type" content="website" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+				
+		<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	
+	<body>
+		<div>
+		<h1>Prijava ispita na FFOS-u</h1>
+		
+			<form action="serverStrana.php" id="prijava">		
+				<fieldset>
+					<legend>Upisni podaci</legend>
+					<label for="ime">Ime</label>
+					<input id="ime" type="text" placeholder="Franjo" />
+					
+					<label for="prezime">Prezime</label>
+					<input id="prezime" type="text" placeholder="Krežma" />
+					<br />
+					<br />
+					
+					<label for="naziv">Naziv studija</label>
+					<input id="naziv" type="text" placeholder="npr. Informatologija" />
+					
+					<label for="godine">Godina studija</label>
+					<input id="godine" type="number" step="1" min="1" max="5" />
+					
+					<br />
+					<br />
+					
+					<label for="jmbag">JMBAG</label>
+					<input id="jmbag" type="number" placeholder="jedinstveni broj studenta"/>
+					
+					<hr />
+
+					
+					<label for="kolegiji">Kolegij: </label>					
+					<select id="kolegiji" size="4" required form="prijava">
+						<optgroup label="prva godina">
+							<option value="ukiz">Uvod u knjižničnu i informacijsku znanost</option>
+						<optgroup label="druga godina">
+							<option value="oms">Oblikovanje mrežnih stranica</option>
+							<option value="opiu">Organizacija i poslovanje informacijskih ustanova</option>
+							<option value="oi">Organizacija informacija I</option>
+					</select>
+					<br />
+					<br />
+					<label for="broj">Izlazak na ispit:</label>
+					<input list="broj1" id="broj">
+					<datalist id="broj1"> 
+						<option value="prvi">
+						<option value="drugi">
+						<option value="treći">
+						<option value="četvrti">
+					</datalist>
+				</fieldset>
+			</form>
+		</div>
+	<dialog hidden>Budite realni!</dialog>
+
+<br/>
+<div class="marquee">
+  <div>
+    <span>Koliko bodova mislite da ćete dobiti na ispitu?</span>
+  </div>
+</div>
+	
+	<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+		<input type="range" name="b" value="0" /> +
+		<input type="number" name="a" value="5" /> =
+		<output name="result">10</output>
+	</form>
+	
+	<br />
+		<button type="button" onclick="alert('Prijavili ste ispit!')">PRIJAVI ISPIT</button>
+	<br />
+		<meter value="0.8" hidden>80%</meter>
+		<progress value="80" max="100" hidden></progress>
+	<br/>
+	<br/>
+	
+	
+	<img src="koala.jpg" alt="nema slike" /> <br/>
+	<a href="https://memegenerator.net/Koala-Bear-Shocked">More koala memes</a>
+	
+	<br/>
+	<br/>
+		<audio src="pjesma.mp3"  controls ></audio>
+	
+	<div id="details">
+		<details>
+			<summary>OMS 2017.</summary>
+			<p>© Eva Stojić</p>
+			<p>© Filozofski fakultet u Osijeku</p>
+		</details>
+	</div>
+	</body>
+	
+	
+</html>	

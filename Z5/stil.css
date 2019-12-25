@@ -1,0 +1,92 @@
+@media screen and (min-width:320px) {
+html {
+	font-size : calc(16px + 6 * ((100vw - 320px) / 680));
+	text-align : center;
+	font-family: "Geneva", sans-serif;
+	}
+}
+@media screen and (min-width:1000px) {
+html {
+	font-size : 22px;
+	text-align : center;
+	}
+}
+
+@media print {
+    footer {page-break-after: always;
+		orphans: 3;
+		widows: 5;}
+	h1 {page-break-before: always;}
+	p {page-break-inside: avoid;
+		quotes: "\00ab" "\00bb";}
+	
+}
+
+body{
+    margin-left: 25vw;
+	margin-right:25vw;
+	border: 2px solid black;
+	padding: 0 4px 0 4px;
+	background-color: #FBF3CE;
+}
+
+.marquee {
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 30px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+
+  width: 50%; 
+  marquee-direction: forward;
+  marquee-style: scroll;
+  marquee-speed: fast;
+  marquee-play-count: infinite;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+/* Author: James Barnett
+URL: https://codepen.io/jamesbarnett/pen/kfmKa */
+
+#details{
+	font-size: 0.5em;
+}
+
+img{
+	animation: pokret 7s infinite;
+	width: 280px;
+	object-fit: scale-down;
+	object-position: center;
+}
+
+audio{
+	voice-volume: silent;
+	voice-duration: 30s;
+	voice-pitch: 30%;
+	voice-rate: medium;
+	voice-stress: strong; 
+	voice-balance: right;
+}
+
+@keyframes pokret {
+    50% {
+        filter: grayscale(100%);
+    }
+}
